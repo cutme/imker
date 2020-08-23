@@ -1,0 +1,21 @@
+.o-lead {
+    &--1 {
+        @extend %lead--1;   // 60
+    }
+    
+    &--2 {
+        @extend %lead--2;   // 50
+    }
+
+    &--3 {
+        @extend %lead--3;   // 48
+    }
+    
+    &--4 {
+        @extend %lead--4;   // 36
+    }
+    
+    &--5 {
+        @extend %lead--5;   // 24
+    }
+}

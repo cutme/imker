@@ -1,0 +1,24 @@
+.o-lessmore {
+    @extend %rel;
+    text-transform: uppercase;
+    padding-left: 30px;
+    cursor: pointer;
+    font: {
+        size: rem(14);
+        weight: $bold;
+    }
+    
+    &:before {
+        @extend %abs;
+        @extend %abs-pseudo;
+        @extend %anim;
+        left: 0; top: 0;
+        font-family: $icomoon;
+        transform: rotate(270deg);
+        content: "\e901";
+        
+        .no-details & {
+            transform: rotate(90deg);
+        }
+    }
+}

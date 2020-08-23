@@ -1,0 +1,102 @@
+.c-hexagons {
+    @extend %flex;
+    @extend %flex-wrap;
+    width: calc(100% + 6px);
+    margin: 0 -6px;
+    
+    & { 
+        @extend %animfix;
+    }
+    
+    & + .c-hexagons {
+        margin-top: -63px;
+        transform: translateX(110px);
+//        transform: translateX(113px);
+        
+        @media ( min-width: $tablet + 1px ) and ( max-width: $page + px ) {
+            margin-top: page(-63);
+        	transform: translateX( page(107) );
+        }
+
+        @media ( max-width: $tablet + px ) {
+            margin-top: tablet(-63);
+        	transform: translateX( tablet(107) );
+        }
+        
+        & + .c-hexagons {
+            flex-wrap: nowrap;
+            transform: translateX(0);
+            
+            li {
+                &:last-child {
+                    padding-left: 40px;
+                }
+            }
+        }
+    }
+
+    img {
+        display: block;
+        backface-visibility: hidden;
+        transform: translate3d(0,0,0);
+        mask-image: url(../img/assets/hexagon.svg);
+        mask-size: 100% 100%;
+        overflow: hidden;
+    }
+    
+    li {
+        @extend %flex;
+        @extend %flex-xy;
+        flex-shrink: 0;
+        //width: grid(220);
+        width: 220px;
+        padding: 3px;
+        //margin: 3px;
+        //height: 100px;
+        
+        @media ( min-width: $tablet + 1px ) and ( max-width: $page + px ) {
+            width: grid(220, 776);
+            //margin: page(3);
+        }
+        
+        @media ( min-width: $tablet + 1px ) {
+        	//width: grid(220, 776);
+        }
+        
+        @media ( max-width: $tablet + px ) {
+        	width: grid(220, $tablet);
+        	//padding: 3px;
+            //margin: 3px;
+        }
+        
+    }
+    
+    .b-lazy {
+        opacity: 1;
+    }
+    
+    p {
+        white-space: nowrap;
+        line-height: 1;
+        font-weight: $bold;
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+            font-size: rem(14);
+        }
+    }
+
+    .o-lead {
+        &--1 {
+            color: $c-primary;
+            
+            @media ( max-width: $tablet_portrait + px ) {
+            	font-size: rem(30);
+            }
+            
+            @media ( max-width: $smartphone_portrait + px ) {
+                font-size: rem(18);
+            }
+        }
+    }
+
+}

@@ -1,0 +1,47 @@
+.c-footer {
+    @extend %flex;
+    @extend %flex-wrap;
+    @extend %wrap;
+
+    &__nav {
+        width: grid(270);
+        
+        @media ( max-width: $tablet_portrait + px ) {
+            width: calc(100% / 3);
+        }
+
+        .o-lead {
+            &--5 {
+                margin-bottom: 1.2em;
+            }
+        }
+        
+        a {
+            font-weight: $bold;
+            
+            @media ( max-width: $smartphone_portrait + px ) {
+            	font-size: rem(13);
+            }
+            
+            &:hover {
+                .desktop & {
+                    color: $c-primary;
+                }
+            }
+        }
+        
+        li {
+            margin-bottom: .7em;
+            
+            @media ( max-width: $smartphone_portrait + px ) {
+            	margin-bottom: .5em;
+            }
+        }
+        
+        &:last-of-type {
+            a {
+                font-weight: $light;
+            }
+        }
+    }
+}

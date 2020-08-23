@@ -1,0 +1,57 @@
+.c-team {
+    @extend %flex;
+    @extend %flex-wrap;
+    @extend %wrap;
+    margin-bottom: 100px;
+    overflow: hidden;
+    
+    @media ( max-width: $page + px ) {
+    	margin-bottom: page(100);
+    }
+    
+    @media ( max-width: $smartphone_portrait + px ) {
+    	margin-bottom: 40px;
+    }
+    
+    .o-article {
+        margin-bottom: 30px;
+        
+        span {
+            @media ( min-width: $tablet + 1px ) and ( max-width: $page2 + px ) {
+            	display: none;
+            }
+        }    
+    }
+
+    .o-cols {
+        @media ( min-width: $tablet + 1px ) {
+            width: calc(100% + 20px);
+            margin: 0 -10px;
+        }
+        
+        @media ( max-width: $tablet + px ) {
+    	    flex-direction: column-reverse;
+        }
+        
+        &__item {
+            
+            @media ( min-width: $tablet + 1px ) {
+                width: 50%;
+                margin: 0 10px;
+            }
+            
+            &:last-of-type {
+                @media ( max-width: $tablet + px ) {
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+    
+    .textinside {
+        @media ( max-width: $smartphone_portrait + px ) {
+        	//width: auto;
+        	padding: 0 10px;
+        }
+    }
+}

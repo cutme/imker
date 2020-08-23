@@ -1,0 +1,6 @@
+@include font-face-db( "icomoon", "icomoon", normal);
+@include font-face-db( "Proxima Nova", "ProximaNova-Light", $light, normal);
+@include font-face-db( "Proxima Nova", "ProximaNova-LightIt", $light, italic);
+@include font-face-db( "Proxima Nova", "ProximaNova-Bold", $bold, normal);
+@include font-face-db( "Proxima Nova", "ProximaNova-BoldIt", $bold, italic);
+@include font-face-db( "Proxima Nova", "ProximaNova-Regular", $regular, normal);

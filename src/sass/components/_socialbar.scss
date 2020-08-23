@@ -1,0 +1,42 @@
+.c-socialbar {
+    @extend %anim;
+    position: fixed;
+    right: 0; top: 180px;
+    width: 180px;
+    
+    @media ( max-width: $tablet + px ) {
+    	display: none;
+    }
+
+    .is-scrolled & {
+        top: 100px;
+    }
+    
+    @media ( min-width: $design + 1px ) {
+        right: calc((100% - 1560px)/2 - 180px);
+    }
+    
+    @media ( max-width: $design + px ) {
+    	width: calc((100% - 1560px)/2);
+    }
+    
+    @media ( max-width: 1680px ) {
+    	width: 60px;
+    }
+    
+    li {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    
+    a {
+        opacity: .5;
+
+        &:hover {
+            .desktop & {
+                opacity: 1;
+                color: $c-primary;
+            }
+        }
+    }
+}

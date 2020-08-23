@@ -1,0 +1,13 @@
+.o-header {
+    width: 100%;
+    margin-bottom: 40px;
+    white-space: nowrap;
+    
+    @media ( max-width: $page + px ) {
+    	margin-bottom: page(40);
+    }
+    
+    @media ( max-width: $smartphone_portrait + px ) {
+    	margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,60 @@
+.o-more {
+    @extend %anim;
+    @extend %rel;
+    font-weight: $bold;
+    white-space: nowrap;
+    
+    &:before {
+        @extend %abs;
+        @extend %abs-after;
+        @extend %abs-y;
+        @extend %anim;
+        left: 0;
+    }    
+
+    &--arrow {
+        padding-left: 40px;
+
+        &:before {
+            font: {
+                family: $icomoon;
+                size: rem(16);
+            }
+            color: $c-primary;
+            content: "\e901";
+        }
+
+        &:hover {
+            .desktop & {
+                color: $c-primary;
+            }
+        }
+    }
+    
+    &--line {
+        padding-left: 80px;
+        
+        @media ( max-width: $page + px ) {
+        	padding-left: 60px;
+        }
+
+        &:before {
+            width: 60px; height: 2px;
+            background-color: $c-black-01;
+            
+            @media ( max-width: $page2 + px ) {
+        	    width: 40px;
+            }
+        }
+        
+        &:hover {
+            .desktop & {
+                color: $c-primary;
+                
+                &:before {
+                    background-color: $c-primary;
+                }
+            }
+        }
+    }
+}

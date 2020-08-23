@@ -1,0 +1,17 @@
+.o-author {
+    
+    &__name,
+    &__position {
+        @extend %lead--5;
+        text-transform: uppercase;
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+            font-size: rem(14);
+        }
+    }
+    
+    &__name {
+        font-weight: $bold;
+        color: $c-primary;
+    }
+}

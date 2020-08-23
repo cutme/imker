@@ -1,0 +1,43 @@
+.c-newsletter {
+    width: 100%;
+
+    @media ( min-width: $tablet_portrait + 1px ) {
+	    width: grid(670);
+        margin-left: grid(80);
+    }
+    
+    @media ( max-width: $tablet_portrait + px ) {
+    	margin-top: 40px;
+    }
+    
+    .o-btn {
+        height: 64px;
+        background-color: $c-black-01;
+        border: none;
+        text-transform: uppercase;
+        color: white;
+    }
+    
+    input[type=email] {
+        height: 64px;
+        border-bottom-color: $c-black-01;
+    }
+    
+    input[type=checkbox] {
+        @extend %checkbox;
+        
+        & + label {
+            margin-top: 20px;
+        }
+    }
+    
+    .o-lead {
+        &--5 {
+            margin-bottom: 10px;
+        }
+    }
+    
+    .row {
+        @extend %flex;
+    }
+}

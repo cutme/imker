@@ -1,0 +1,73 @@
+.c-socialline {
+    @extend %flex;
+    @extend %flex-wrap;
+    @extend %wrap;
+    margin-bottom: 100px;
+    overflow: hidden;
+    
+    @media ( max-width: $page + px ) {
+    	margin-bottom: page(100);
+    }
+
+    [class^="icon-"] {
+        font-size: rem(28);
+        color: $c-black-01;
+        
+        @media ( max-width: $smartphone_portrait + px ) {
+            font-size: rem(18);
+        }
+    }
+    
+    ul {
+        @extend %flex;
+        width: auto;
+        background-color: white;
+        margin: 0 0 0 auto;
+        padding-right: 0;
+    
+        li {
+            padding-left: 60px;
+            
+            @media ( max-width: $tablet + px ) {
+            	padding-left: 30px;
+            }
+            
+            @media ( max-width: $smartphone_portrait + px ) {
+                padding-left: 15px;
+            }
+        }
+    }
+    
+    .o-header {
+        @extend %flex;
+        @extend %flex-y;
+        @extend %rel;
+        width: 100%;
+        
+        &:after {
+            @extend %abs;
+            @extend %abs-pseudo;        
+            @extend %abs-y;
+            z-index: -1;
+            left: 0;
+            width: 100%; height: 1px;
+            background-color: $c-gray-01;
+        }
+        
+        .o-lead {
+            &--4 {
+                background-color: white;
+                padding-right: 60px;
+                
+                @media ( max-width: $tablet + px ) {
+                    padding-right: 30px;
+                }
+                
+                @media ( max-width: $smartphone_portrait + px ) {
+                    padding-right: 15px;
+                }
+            }
+        }
+
+    }
+}

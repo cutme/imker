@@ -1,0 +1,10 @@
+.b-lazy {
+	transition: all 600ms ease-out;
+	opacity: 0;
+	
+	&.b-loaded {
+		opacity: 1;
+	}
+}
+
+

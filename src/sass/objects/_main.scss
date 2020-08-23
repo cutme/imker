@@ -1,0 +1,16 @@
+.o-main {
+    padding-top: 178px;
+    overflow: hidden;
+    
+    @media ( max-width: $page + px ) {
+    	padding-top: 150px;
+    }
+    
+    @media ( max-width: $tablet + px ) {
+        padding-top: 100px;
+    }
+    
+    @media ( max-width: $smartphone_portrait + px ) {
+    	padding-top: 80px;
+    }
+}

@@ -1,0 +1,35 @@
+.c-bottom {
+    @extend %flex;
+    @extend %flex-wrap;
+    @extend %flex-y;
+    @extend %wrap;
+    padding: {
+        top: 60px;
+        bottom: 60px;
+    }
+
+    a {
+        color: $c-primary;
+
+        &:hover {
+            .desktop & {
+                color: $c-primary;
+            }
+        }
+    }
+    
+    &__copyrights {
+        p {
+            font-size: rem(16);
+
+            &:not(:last-of-type) {
+                margin-bottom: .6em;
+            }
+        }
+    }
+    
+    .o-logo {
+        margin: 0 0 0 auto;
+        opacity: .22;
+    }
+}

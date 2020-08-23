@@ -1,0 +1,48 @@
+[class^="icon-"], [class*=" icon-"] {
+  &:before {
+      font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  }
+}
+.icon-mail:before {
+  content: "\e900";
+}
+.icon-tel:before {
+  content: "\e90a";
+}
+.icon-arrow:before {
+  content: "\e901";
+}
+.icon-facebook-f:before {
+  content: "\e902";
+}
+.icon-fullfillment:before {
+  content: "\e903";
+}
+.icon-instagram:before {
+  content: "\e904";
+}
+.icon-linkedin-in:before {
+  content: "\e905";
+}
+.icon-salescrm:before {
+  content: "\e906";
+}
+.icon-selfpublishing:before {
+  content: "\e907";
+}
+.icon-support:before {
+  content: "\e908";
+}
+.icon-youtube:before {
+  content: "\e909";
+}
