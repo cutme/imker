@@ -12,14 +12,6 @@ require('./js/nav.js');
 require('./js/scrollpos.js');
 require('./js/questions.js');
 
-
-//require('./js/inview.js');
-//require('./js/fixel.js');
-
-
-//require('./js/mobile-detach.js');
-
-
 require('./img/photos/blog/blog.jpg');
 require('./img/photos/blog/blog@2x.jpg');
 

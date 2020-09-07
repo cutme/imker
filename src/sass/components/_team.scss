@@ -48,10 +48,26 @@
         }
     }
     
+    .o-lead {
+        &--1 {            
+            @media ( max-width: $tablet + px ) {
+            	font-size: tablet(50);
+            }
+            
+            @media ( max-width: 480px ) {
+            	//font-size: rem(12);
+            }
+            
+            
+        }
+    }
+    
     .textinside {
         @media ( max-width: $smartphone_portrait + px ) {
         	//width: auto;
         	padding: 0 10px;
         }
+        
+        
     }
 }
