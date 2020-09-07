@@ -24,10 +24,6 @@ document.addEventListener('DOMContentLoaded',function() {
     	    slidesPerView: 'auto',
     	    speed: 600
 	    });
-	    
-	    swiper.on('slideChange', function () {
-          console.log('slide changed');
-        });
     };
 
     window.reviewsSlider = function() {
